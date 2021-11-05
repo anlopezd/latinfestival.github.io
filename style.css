@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -63,6 +64,7 @@ nav ul li:hover {
     transform: translateY(-1px);
 }
 
+
 /* Hero */
 #hero {
     position: relative;
@@ -105,6 +107,17 @@ a {
     font-size: 1.6rem;
 }
 
+@media  screen and (max-width: 400px) {
+    .promo h1 {
+        margin-top: -20px;
+        padding: 0 20px;
+    }
+
+    .promo p {
+        padding: 20px;
+    }
+}
+
 /* Time */
 
 #time {
@@ -114,6 +127,14 @@ a {
     justify-content: center;
     align-items: center;
     height: 150px;  
+    width: 100%;
+}
+
+.time-prcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #time div {
@@ -136,10 +157,27 @@ color: rgba(233, 176, 53, 0.918);
     color: rgb(153, 136, 121);
 }
 
+@media screen and (max-width: 400px) {
+   #time {
+       height: 100%;
+   }
+   
+    .time-prcontainer {
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+    }
+
+    .time-container {
+        margin: 20px 0;
+    }
+}
+
 /* About */
 
 #about {
     margin-top: 50px;
+    
     
 }
 .about-container {
@@ -187,12 +225,20 @@ color: rgba(233, 176, 53, 0.918);
 .img-container {
     height: 90%;
     width: 90%;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .right img {
     object-fit: contain;
     margin: 20px 20px;
-    border-radius: 10px;
 }
 
 .second-right {
@@ -202,7 +248,7 @@ color: rgba(233, 176, 53, 0.918);
 .second-left img {
     object-fit: contain;
     margin: 20px 20px;
-    border-radius: 10px;
+    
 }
 
 .second-right h2 {
@@ -220,6 +266,29 @@ img {
     object-fit: contain;
     width: 100%;
   
+}
+
+@media screen and (max-width: 400px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-container .left {
+        width: 100%;
+    }
+
+    .about-container .right {
+        width: 100%;
+    }
+
+    .about-container .left img {
+        display: none;
+    }
+    .about-container .right img {
+        display: none;
+    }
+
+
 }
 
 /* hr */
