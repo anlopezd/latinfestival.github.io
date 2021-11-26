@@ -73,7 +73,7 @@ nav ul li a:hover {
     padding-bottom: 3px;    
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     header {
         transform: translateY(-300%);
 
@@ -150,7 +150,7 @@ a {
     font-size: 1.6rem;
 }
 
-@media  screen and (max-width: 400px) {
+@media  screen and (max-width: 480px) {
     .promo h1 {
         margin-top: -20px;
         padding: 0 20px;
@@ -200,7 +200,7 @@ color: rgba(233, 176, 53, 0.918);
     color: rgb(153, 136, 121);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
    #time {
        height: 100%;
    }
@@ -307,7 +307,7 @@ img {
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .about-container {
         display: flex;
         flex-direction: column;
@@ -406,7 +406,7 @@ cursor: pointer;
     color: white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .card-container {
         gap: 30px;
     }
@@ -484,7 +484,7 @@ footer {
     display: block;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .footer-container {
         flex-direction: column;
         justify-content: center;
@@ -513,7 +513,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     #prueba {
         display: block;
     }
@@ -539,7 +539,8 @@ footer {
 }
 
 .upclose .barra1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .upclose .barra2 {
@@ -548,6 +549,7 @@ footer {
 
 .upclose .barra3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .convertir .barra1 {
@@ -562,7 +564,7 @@ footer {
     background-color: black;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     #menu-container {
         position: fixed;
         bottom: 40px;
