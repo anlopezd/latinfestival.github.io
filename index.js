@@ -25,6 +25,7 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("scroll", function() {
     let menu = document.getElementById("menu-container");
-    menu.classList.toggle("fondoblanco", window.scrollY >= 4037)
+    menu.classList.toggle("fondoblanco", window.scrollY >= 4919
+    )
 })
 

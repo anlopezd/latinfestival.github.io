@@ -287,14 +287,13 @@ color: rgba(233, 176, 53, 0.918);
 }
 
 .img-container img {
-    border-radius: 10px;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .right img {
-    object-fit: contain;
+    object-fit: cover;
     margin: 20px 20px;
 }
 
@@ -303,7 +302,7 @@ color: rgba(233, 176, 53, 0.918);
 }
 
 .second-left img {
-    object-fit: contain;
+    object-fit: cover;
     margin: 20px 20px;
     
 }
@@ -320,7 +319,7 @@ color: rgba(233, 176, 53, 0.918);
 }
 
 img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   
 }
@@ -475,7 +474,6 @@ margin: 0 15px;
 
     .img-container img {
         object-fit: cover;
-        border-radius: none;
         width: 100%;
     }
 
