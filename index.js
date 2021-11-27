@@ -11,6 +11,11 @@ document.getElementById("menu-container").addEventListener("click", () => {
     nav.classList.toggle("prueba2");
 })
 
+nav.addEventListener("click", () => {
+    nav.classList.remove("prueba2")
+    let menubarra = document.getElementById("menu-container")
+    menubarra.classList.remove("upclose")
+})
 
 
 document.getElementById("menu-container").addEventListener("click", function() {
@@ -25,7 +30,7 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("scroll", function() {
     let menu = document.getElementById("menu-container");
-    menu.classList.toggle("fondoblanco", window.scrollY >= 4919
-    )
+    menu.classList.toggle("fondoblanco", window.scrollY >= 4919)
 })
+
 
