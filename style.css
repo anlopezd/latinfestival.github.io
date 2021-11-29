@@ -19,8 +19,9 @@ header {
     z-index: 50;
     width: 100%;
     transition: 1s;
-    height: 80px;
+    height: 65px;
     transition: all 0.5s ease;
+    background-color: rgba(0,0,0,0.2);
 }
 .header-container {
     width: 100%;
@@ -75,7 +76,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 480px) {
     header {
-        transform: translateY(-300%);
+        transform: translateY(-340%);
     }
 
     .header-container h2 {
@@ -490,6 +491,8 @@ footer {
     color: white;
     width: 100%;
 }
+
+
 
 .footer-container {
     display: flex;

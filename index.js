@@ -1,3 +1,5 @@
+import countdown from "./time.js"
+import intervalo from "./fondos.js"
 
 window.addEventListener("scroll", function() {
     let header = document.getElementById("header");
@@ -34,3 +36,13 @@ window.addEventListener("scroll", function() {
 })
 
 
+
+window.sr = ScrollReveal();
+
+sr.reveal('#about', {
+    duration: 2000,
+    origin: "right",
+    distance: "-100%"
+})
+
+window.addEventListener("load", intervalo)
