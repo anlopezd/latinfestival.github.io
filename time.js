@@ -13,10 +13,19 @@ export default function countdown() {
     const textMinutes = Math.floor((gap % hour) / minutes)
     const textSeconds = Math.floor((gap % minutes) / second) 
 
+    
     document.getElementById("days").innerHTML = textDay
     document.getElementById("hours").innerHTML = textHour
     document.getElementById("minutes").innerHTML = textMinutes
     document.getElementById("seconds").innerHTML = textSeconds
+    if (textHour < 10) {
+        document.getElementById("hours").innerHTML = "0" + textHour
+    } else if (minutes < 10) {
+        document.getElementById("minutes").innerHTML = "0" + textMinutes
+    } else if (seconds < 10) {
+        document.getElementById("seconds").innerHTML = "0" + textSeconds
+    }
+    
 }
 
 setInterval(countdown, 1000)
